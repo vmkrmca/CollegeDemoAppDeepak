@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/etEventID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_25"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_25"
+        android:background="@drawable/edit_border"
+        android:hint="Enter Event ID"
+        android:inputType="number"
+        android:padding="@dimen/padding_12"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+
+    <EditText
+        android:id="@+id/etEventTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_25"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_25"
+        android:background="@drawable/edit_border"
+        android:hint="Enter Event title"
+        android:inputType="text"
+        android:padding="@dimen/padding_12"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+
+    <EditText
+        android:id="@+id/etEventDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_25"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_25"
+        android:background="@drawable/edit_border"
+        android:hint="Enter Event Description"
+        android:lines="4"
+        android:gravity="start"
+        android:inputType="textMultiLine"
+        android:padding="@dimen/padding_12"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_25"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_25"
+        android:background="@drawable/edit_border"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etEventDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.85"
+            android:background="@null"
+            android:hint="Event Date"
+            android:padding="@dimen/padding_12"
+            android:editable="false"
+            android:enabled="false"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.004"
+            android:background="@color/design_default_color_error" />
+
+        <ImageView
+            android:id="@+id/ivCalendar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_weight="0.15"
+            android:src="@android:drawable/ic_menu_my_calendar" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_25"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_25"
+        android:background="@drawable/edit_border"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etEventTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.85"
+            android:background="@null"
+            android:hint="Event Time"
+            android:layout_gravity="center"
+            android:padding="@dimen/padding_12"
+            android:editable="false"
+            android:enabled="false"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.004"
+            android:background="@color/design_default_color_error" />
+
+        <ImageView
+            android:id="@+id/ivTCalendar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_weight="0.15"
+            android:src="@android:drawable/ic_menu_my_calendar" />
+
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spCourse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_25"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_25"
+        android:background="@drawable/edit_border"
+        android:entries="@array/courses"
+        android:outlineSpotShadowColor="@color/black"
+        android:padding="@dimen/padding_12"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+
+    <TextView
+        android:id="@+id/tvAddEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD EVENT"
+        android:layout_margin="@dimen/margin_25"
+        android:padding="@dimen/padding_12"
+        android:background="@drawable/btn_border"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size_22"
+        android:gravity="center"
+        />
+
+
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Margins-->
+    <dimen name="margin_25">25dp</dimen>
+    <dimen name="margin_1">1dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+
+    <!--TextSizes-->
+    <dimen name="text_size_22">22sp</dimen>
+    <!--Padding-->
+    <dimen name="padding_12">12dp</dimen>
+</resources>

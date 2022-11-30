@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/college_icon" />
+
+    <TextView
+        android:id="@+id/tvAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_25"
+        android:background="@drawable/btn_border"
+        android:gravity="center"
+        android:padding="@dimen/padding_12"
+        android:text="@string/admin"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_22"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/tvStudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_25"
+        android:background="@drawable/btn_border"
+        android:gravity="center"
+        android:padding="@dimen/padding_12"
+        android:text="@string/student"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_22"
+        android:textStyle="bold" />
+
+</LinearLayout>
